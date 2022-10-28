@@ -1,7 +1,7 @@
-### Running old dos games in your browser via docker
+# Running old dos games in your browser via docker
 This repo contains code to build many old dos games in a JavaScript dos emulator, containerized in Docker, to run games in your browser!
 
-# Requirements: 
+### Requirements: 
  - NodeJS
   - NPM
   - NPX
@@ -9,7 +9,7 @@ This repo contains code to build many old dos games in a JavaScript dos emulator
  - Docker
   - docker compose
 
-# How to build
+### How to build
 1. Run the bash script "create_game.sh" which will run the `create-dosbox@latest` package. 
 2. The package will ask you to enter an old game's name. Type in any old game you want (e.g. "doom") and hit Enter.
 3. It will show you a list of possible results (if any). Select the relevant game you want with the arrow keys and hit Enter. 
@@ -19,7 +19,7 @@ This repo contains code to build many old dos games in a JavaScript dos emulator
 7. (Optional) tag the docker image and push it to dockerhub or your desired image registry and deploy it anywhere (cloud providers, K8s etc!). 
 
 
-# Additional info
+## Additional info
 I came up with this project idea because I wanted to be able to deploy and play old games in my browser (via PC or phone) at any time, anywhere, so this project was the perfect fit.
 It was extremely educational and a bit challenging at times, improving my NodeJS and Docker skills. I ended up deploying "Doom" containers and other games on a multi-node K8s cluster on Google Cloud Platform, then added load balancers that pointed to my website's domain which was really fun :)
 
