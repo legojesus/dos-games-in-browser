@@ -1,0 +1,5 @@
+services:
+    game:
+        build: .
+        ports:
+            - 80:8080
