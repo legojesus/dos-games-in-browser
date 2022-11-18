@@ -55,7 +55,8 @@ awk -v game="${game}" -i inplace '/         server_name localhost;/ { print; pri
 awk -v game="${game}" -i inplace '/        <h1>Select A Game:<\/h1>/ { print; print "        <div><a href=\"/"game"\"><h2>"game"<\/h2>\<\/a>\<\/div>"; next }1' index.html
 
 
-### When done, clear all and report success:
+### When done, go back to origin and report success:
+cd ..
 echo
 echo
 echo
