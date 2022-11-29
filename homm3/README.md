@@ -10,7 +10,7 @@ This is made possible with:
 
 Basically this deployment runs HoMM3 in a container and streams the game's window via VNC to the browser's VNC client, so you are remotely connected to the container's virtual display and are playing the game inside the container!
 
-##How to run: 
+## How to deploy and run: 
 1. Copy the contents of your local HoMM3 game folder into the HoMM3 folder here.
 2. In your CLI, type `docker build -t homm3 .` to build the image. If you don't have the game on your computer or if you'd like to save some time building this image, you can get it from my dockerhub: `docker pull legojesus/homm3_in_browser:latest`.
 3. Type `docker run -p 80:8081 --rm homm3` to run the game. Note that the `homm3` bit might change depending on how you named the image when you built it or if you pulled it from dockerhub. Use `docker images` to see your local images and their correct names.
